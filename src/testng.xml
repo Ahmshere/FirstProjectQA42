@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2">
+
+    <test name="TriangleTests">
+        <classes>
+
+            <class name="tests.TestTriangleTypes">
+
+                <methods>
+                    <include name="triangleTest001"/>
+                    <include name="triangleTest002"/>
+                    <include name="triangleTest003"/>
+
+                </methods>
+
+            </class>
+            <class name="tests.CalculatorTest">
+                <methods>
+                    <include name="testCalculatorPositiveNumbers"/>
+                    <include name="testMixedNumbers"/>
+                    <include name="testSingleNumber"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>
